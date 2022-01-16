@@ -212,21 +212,21 @@ a:hover {
   font-family: "poppins", sans-serif;
 }
 
-.about .title {
+.content .title {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
 }
 
-.about .title span {
+.content .title span {
   font-size: 30px;
   font-weight: 600;
   padding-bottom: 8px;
   position: relative;
 }
 
-.about .title span::after,
-.about .title span::before {
+.content .title span::after,
+.content .title span::before {
   content: "";
   position: absolute;
   left: 0;
@@ -236,7 +236,7 @@ a:hover {
   background: #4070f4;
 }
 
-.about .title span::after {
+.content .title span::after {
   width: 70%;
   left: 50%;
   transform: translateX(-50%);
@@ -263,7 +263,7 @@ a:hover {
   width: 55%;
 }
 
-.about .about-details .left .topic {
+.left .topic {
   font-size: 25px;
   font-weight: 500;
   color: #0e2431;
@@ -310,6 +310,7 @@ a:hover {
   .about .about-details .right img {
     height: 350px;
     width: 350px;
+    margin-bottom: 20px;
   }
 }
 
