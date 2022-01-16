@@ -104,6 +104,7 @@ a:hover {
 .home .home-content .text-four {
   font-size: 23px;
   margin: 5px 0;
+  margin-bottom: 20px;
 }
 
 .button-49,
@@ -204,8 +205,115 @@ a:hover {
   }
 }
 
-/*Start of Jqueries*/
-@media (max-width: 600px) {
+/*Start of about style*/
+.about .content {
+  width: 80%;
+  margin: 40px auto;
+  font-family: "poppins", sans-serif;
+}
+
+.about .title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.about .title span {
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.about .title span::after,
+.about .title span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: #4070f4;
+}
+
+.about .title span::after {
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -7px;
+}
+
+.about .about-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about .about-details .right {
+  width: 45%;
+}
+.about .about-details .right img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.about .about-details .left {
+  width: 55%;
+}
+
+.about .about-details .left .topic {
+  font-size: 25px;
+  font-weight: 500;
+  color: #0e2431;
+  margin-bottom: 10px;
+}
+
+.about-details .left p {
+  color: #00e6f6;
+  text-align: justify;
+}
+/*Start of Respondive Desing*/
+
+@media (max-width: 1190px) {
+  .about .content {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1090px) {
+  .home {
+    height: 120vh;
+    width: 100%;
+    background-color: #ff3cac;
+    background-image: linear-gradient(
+      225deg,
+      #ff3cac 0%,
+      #784ba0 50%,
+      #2b86c5 100%
+    );
+  }
+
+  .about .about-details {
+    flex-direction: column;
+  }
+
+  .about .about-details .right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 971px) {
+  .about .about-details .right img {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 900px) {
   #btn-mobile {
     display: block;
   }
@@ -228,7 +336,7 @@ a:hover {
   #menu a {
     padding: 1rem 0;
     margin: 0px 1rem;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 2px solid #ff013c;
   }
 
   #btn-mobile {
